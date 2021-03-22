@@ -60,3 +60,6 @@ allow system_app sysfs_fcharge:file { open read getattr write };
 # Vibrator
 allow system_app sysfs_vibrator:file { getattr open read write };
 allow system_app sysfs_vibrator:dir search;
+
+# FPS Info Overlay
+allow system_app sysfs_fps:file { open read getattr write };
