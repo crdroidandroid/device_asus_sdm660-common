@@ -11,3 +11,6 @@ allow init vendor_file:file { execute execute_no_trans };
 
 # USB Fastcharge
 allow init sysfs_fcharge:file { write open };
+
+# Vibrator
+allow init sysfs_leds: file { open };
