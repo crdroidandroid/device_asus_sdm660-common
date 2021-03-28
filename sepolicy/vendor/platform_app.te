@@ -21,3 +21,6 @@ allow platform_app exported_audio_prop:file { open };
 allow platform_app exported_camera_prop:file { read };
 allow platform_app exported_audio_prop:file { getattr };
 
+# Dolby
+allow platform_app hal_dms_hwservice:hwservice_manager find;
+allow platform_app hal_dms_default:binder { call transfer };
