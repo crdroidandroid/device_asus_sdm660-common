@@ -1,3 +1,6 @@
+# Spectrum
+#persist.spectrum.profile                      u:object_r:spectrum_prop:s0
+
 # Bluetooth
 ro.btmac                                      u:object_r:btmac_prop:s0
 

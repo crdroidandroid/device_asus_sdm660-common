@@ -1,8 +1,14 @@
 # Battery Health
 r_dir_file(system_app, sysfs_battery_supply);
-
+allow system_app sysfs_leds:dir { search };
+allow system_app sysfs_thermal:file { write };
+allow system_app sysfs_thermal:file rw_file_perms;
+allow system_app sysfs_leds:dir search;
+allow system_app spectrum_prop:property_service set;
+get_prop(system_app, spectrum_prop);
 allow system_app sysfs_zram:dir search;
 allow system_app sysfs_zram:file r_file_perms;
+#allow system_app default_prop:property_service { set }; 
 
 # Backlight Dimmer
 allow system_app sysfs_backlight:file { open read getattr write };
