@@ -479,3 +479,7 @@ SRC_MEDIA_HAL_DIR := hardware/qcom-caf/$(YOUR_HW_PLATFORM)/media
 PRODUCT_SOONG_NAMESPACES += device/asus/X00TD
 PRODUCT_SOONG_NAMESPACES += device/asus/sdm660-common
 PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8998
+
+# Inherit packages from vendor/addons/oneplus/apps
+$(call inherit-product, vendor/addons/oneplus/apps/config.mk)
+PRODUCT_SOONG_NAMESPACES += vendor/addons/oneplus/apps
