@@ -13,6 +13,10 @@ allow system_app sysfs_zram:file r_file_perms;
 # Backlight Dimmer
 allow system_app sysfs_backlight:file { open read getattr write };
 
+# Battery Health
+allow system_app sysfs_battery_supply:dir search;
+allow system_app sysfs_battery_supply:file { getattr open read };
+
 # CPU/GPU Boosts
 set_prop(system_app, boosts_prop);
 get_prop(system_app, boosts_prop);

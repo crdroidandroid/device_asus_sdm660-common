@@ -18,11 +18,17 @@
      for different hardware and product builds.  Do not translate. -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
+  
+  <!-- For Ultra Power Saving -->
+  <bool name="config_supportUltraPowerSaving">true</bool> 
+ 
   <!-- Battery Health -->
   <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full</string>
+  <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full_design</string>
   <string name="config_batCurCap">/sys/class/power_supply/bms/charge_now_raw</string>
   <string name="config_batChargeCycle">/sys/class/power_supply/bms/cycle_count</string>
+  <bool name="config_supportBatteryHealth">true</bool>
+ 
 
   <!-- Whether SELinux status should be shown or not. -->
   <bool name="config_show_selinux_status">true</bool>
@@ -33,11 +39,6 @@
 
   <!-- Enable Manual Sub Provisioning -->
   <bool name="config_enableManualSubProvisioning">true</bool>
-  <!-- Battery Health -->
-  <string name="config_batChargeCycle">/sys/class/power_supply/bms/cycle_count</string>
-  <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full_design</string>
-  <string name="config_batCurCap">/sys/class/power_supply/bms/charge_full</string>
-  <bool name="config_supportBatteryHealth">true</bool>
 
   <!-- Legion About -->
   <string name="legion_device_name_summary">ZenFone Max Pro M1</string>
