@@ -1,3 +1,4 @@
+allow toolbox property_socket:sock_file { write };
 # CPU/GPU Boosts
 allow toolbox init:fifo_file { getattr write };
 allow toolbox boosts_prop:property_service { set };

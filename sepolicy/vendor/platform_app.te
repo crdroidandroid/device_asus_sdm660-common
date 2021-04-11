@@ -7,6 +7,9 @@ allow platform_app sysfs_leds:dir search;
 # FPS Info
 allow platform_app sysfs_fps:file rw_file_perms;
 
+# App Lock
+allow platform_app default_android_service:service_manager { find };
+
 # System Info
 allow platform_app sysfs_battery_supply:dir search;
 allow platform_app sysfs_battery_supply:file { getattr open read }; 
