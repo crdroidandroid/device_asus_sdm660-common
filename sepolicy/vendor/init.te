@@ -14,3 +14,8 @@ allow init sysfs_fcharge:file { write open };
 
 # Vibrator
 allow init sysfs_leds: file { open };
+allow init hwservicemanager:binder { call };
+allow init sysfs:file { write };
+allow init sysfs:file { setattr };
+allow init socket_device:sock_file { create };
+allow init hal_usb_hwservice:hwservice_manager { find };
