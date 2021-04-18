@@ -11,7 +11,7 @@ allow system_app spectrum_prop:property_service set;
 get_prop(system_app, spectrum_prop);
 allow system_app sysfs_zram:dir search;
 allow system_app sysfs_zram:file r_file_perms;
-#allow system_app default_prop:property_service { set }; 
+allow system_app sysfs_battery_supply:file { write }; 
 
 # Backlight Dimmer
 allow system_app sysfs_backlight:file { open read getattr write };

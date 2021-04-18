@@ -1,11 +1,23 @@
+# untrusted_app
+allow untrusted_app virtual_ab_prop:file { read };
+allow untrusted_app virtual_ab_prop:file { open };
+allow untrusted_app theme_prop:file { getattr };allow untrusted_app mnt_vendor_file:lnk_file { getattr };
+allow untrusted_app theme_prop:file { read };
+allow untrusted_app theme_prop:file { open };
+allow untrusted_app theme_prop:file { getattr };
+
+
+# untrusted_app_27
 allow untrusted_app_27 theme_prop:file { read };
 allow untrusted_app_27 theme_prop:file { open };
 allow untrusted_app_27 theme_prop:file { getattr };
 allow untrusted_app_27 rootfs:dir { read };
-allow untrusted_app theme_prop:file { getattr };
+
+# untrusted_app_29
 allow untrusted_app_29 exported_camera_prop:file { read };
 allow untrusted_app_29 exported_camera_prop:file { read open getattr };
-allow untrusted_app mnt_vendor_file:lnk_file { getattr };
-allow untrusted_app virtual_ab_prop:file { read };
-allow untrusted_app theme_prop:file { read };
-allow untrusted_app theme_prop:file { open };
+allow untrusted_app_29 mnt_sdcard_file:lnk_file { read };
+allow untrusted_app_29 dalvikcache_data_file:file { execmod };
+allow untrusted_app_29 theme_prop:file { read };
+allow untrusted_app_29 proc_zoneinfo:file { read };
+allow untrusted_app_29 proc:file { read };
