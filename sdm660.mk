@@ -484,5 +484,5 @@ PRODUCT_SOONG_NAMESPACES += device/asus/sdm660-common
 PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8998
 
 # Inherit packages from vendor/addons/oneplus/apps
-$(call inherit-product, vendor/addons/oneplus/apps/config.mk)
-PRODUCT_SOONG_NAMESPACES += vendor/addons/oneplus/apps
+#$(call inherit-product, vendor/addons/oneplus/apps/config.mk)
+#PRODUCT_SOONG_NAMESPACES += vendor/addons/oneplus/apps
