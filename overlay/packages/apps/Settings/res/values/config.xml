@@ -22,6 +22,9 @@
   <!-- For Ultra Power Saving -->
   <bool name="config_supportUltraPowerSaving">true</bool> 
  
+  <!-- Device specific doze package -->
+  <string name="config_customDozePackage">com.asus.doze/com.asus.doze.DozeSettingsActivity</string>
+ 
   <!-- Battery Health -->
   <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full</string>
   <string name="config_batCurCap">/sys/class/power_supply/bms/charge_now_raw</string>
