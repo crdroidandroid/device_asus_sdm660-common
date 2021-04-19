@@ -323,7 +323,7 @@ PRODUCT_PACKAGES += \
     AsusClock \
     CameraGo \
     Gboard \
-    Messaging 
+     
 
 # Public Libraries
 PRODUCT_COPY_FILES += \
