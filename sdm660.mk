@@ -468,12 +468,12 @@ PRODUCT_BOOT_JARS += \
     WfdCommon
 
 # ZenParts
-PRODUCT_PACKAGES += \
-    init.spectrum.rc \
-    init.spectrum.sh \
-    init.zenparts.rc \
-    init.zenparts.sh \
-    ZenParts
+#PRODUCT_PACKAGES += \
+#    init.spectrum.rc \
+#    init.spectrum.sh \
+#    init.zenparts.rc \
+#    init.zenparts.sh \
+#    ZenParts
 
 YOUR_HW_PLATFORM := msm8998
 
