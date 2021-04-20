@@ -73,6 +73,6 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 LOCAL_DEX_PREOPT := false
-LOCAL_OVERRIDES_PACKAGES := Search WebView WebView_Shell Browser chromium webview_shell webview search quicksearchbox
+LOCAL_OVERRIDES_PACKAGES := Search WebView WebView_Shell Browser 
 LOCAL_PRODUCT_MODULE := $(TARGET_OUT)/priv-app
 include $(BUILD_PREBUILT)
