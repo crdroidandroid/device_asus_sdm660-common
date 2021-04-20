@@ -473,15 +473,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
-# ZenParts
-#PRODUCT_PACKAGES += \
-#    init.spectrum.rc \
-#    init.spectrum.sh \
-#    init.zenparts.rc \
-#    init.zenparts.sh \
-#    ZenParts
-
-YOUR_HW_PLATFORM := msm8998
+YOUR_HW_PLATFORM := sdm660
 
 # Hardware
 PRODUCT_BOARD_PLATFORM := $(YOUR_HW_PLATFORM) 
@@ -497,6 +489,13 @@ PRODUCT_SOONG_NAMESPACES += device/asus/X00TD
 PRODUCT_SOONG_NAMESPACES += device/asus/sdm660-common
 PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8998
 
-# Inherit packages from vendor/addons/oneplus/apps
+# OP Apps
 #$(call inherit-product, vendor/addons/oneplus/apps/config.mk)
 #PRODUCT_SOONG_NAMESPACES += vendor/addons/oneplus/apps
+
+# OPLauncher
+#$(call inherit-product, vendor/oplauncher/OPLauncher.mk)
+#PRODUCT_SOONG_NAMESPACES += vendor/oplauncher
+
+# ZenParts
+$(call inherit-product, packages/apps/ZenParts/zenparts.mk)
