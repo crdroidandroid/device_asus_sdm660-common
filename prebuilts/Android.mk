@@ -40,14 +40,14 @@ include $(BUILD_PREBUILT)
 
 # GcamGo
 include $(CLEAR_VARS)
-LOCAL_MODULE := CameraGo
+LOCAL_MODULE := GCam
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := system/priv-app/CameraGo/CameraGo.apk
+LOCAL_SRC_FILES := system/priv-app/Gcam/Gcam-Go.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 LOCAL_MODULE_PATH := $(TARGET_OUT)/priv-app
-LOCAL_OVERRIDES_PACKAGES := SnapdragonCamera Snap Camera2 Camera
+LOCAL_OVERRIDES_PACKAGES := SnapdragonCamera Snap Camera2
 include $(BUILD_PREBUILT)
 
 # Messaging
@@ -62,4 +62,17 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 LOCAL_MODULE_PATH := $(TARGET_OUT)/priv-app
 LOCAL_OVERRIDES_PACKAGES := Messaging messaging Messages messages Message message
 LOCAL_DEX_PREOPT := false
+include $(BUILD_PREBUILT)
+
+# Via 
+include $(CLEAR_VARS)
+LOCAL_MODULE := Via
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := system/priv-app/Via/Via.apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_DEX_PREOPT := false
+LOCAL_OVERRIDES_PACKAGES := Search WebView WebView_Shell Browser chromium webview_shell webview search quicksearchbox
+LOCAL_PRODUCT_MODULE := $(TARGET_OUT)/priv-app
 include $(BUILD_PREBUILT)
