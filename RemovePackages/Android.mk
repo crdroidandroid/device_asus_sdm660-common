@@ -4,7 +4,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := RemovePackages
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
-LOCAL_OVERRIDES_PACKAGES := FM2 Maps YouTube YouTubeMusicPrebuilt qcom.fmradio Music arcore 
+LOCAL_OVERRIDES_PACKAGES := FM2 Maps YouTube YouTubeMusicPrebuilt qcom.fmradio Music arcore chromium webview_shell webview search quicksearchbox
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null
