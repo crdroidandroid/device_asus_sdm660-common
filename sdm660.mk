@@ -127,9 +127,9 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     android.frameworks.displayservice@1.0
 
-# Doze
+# Doze mode
 PRODUCT_PACKAGES += \
-    AsusDoze
+    Doze
 
 # DRM
 PRODUCT_PACKAGES += \
