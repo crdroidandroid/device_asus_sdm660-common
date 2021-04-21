@@ -207,7 +207,7 @@
     <bool name="config_dozeAfterScreenOffByDefault">true</bool>
 
     <!-- Screen brightness when dozing. -->
-    <integer name="config_screenBrightnessDoze">17</integer>
+    <integer name="config_screenBrightnessDoze">15</integer>
     <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
 
     <!-- Whether the display blanks itself when transitioning from a doze to a non-doze state -->
