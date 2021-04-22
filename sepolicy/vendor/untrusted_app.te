@@ -5,6 +5,7 @@ allow untrusted_app theme_prop:file { getattr };allow untrusted_app mnt_vendor_f
 allow untrusted_app theme_prop:file { read };
 allow untrusted_app theme_prop:file { open };
 allow untrusted_app theme_prop:file { getattr };
+allow untrusted_app virtual_ab_prop:file { getattr };
 
 
 # untrusted_app_27
@@ -21,3 +22,6 @@ allow untrusted_app_29 dalvikcache_data_file:file { execmod };
 allow untrusted_app_29 theme_prop:file { read };
 allow untrusted_app_29 proc_zoneinfo:file { read };
 allow untrusted_app_29 proc:file { read };
+allow untrusted_app_29 proc:file { open };
+allow untrusted_app_29 proc_zoneinfo:file { open };
+allow untrusted_app_29 theme_prop:file { open };
