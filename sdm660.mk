@@ -325,8 +325,7 @@ PRODUCT_PACKAGES += \
 
 # Prebuilts
 PRODUCT_PACKAGES += \
-    AsusCalculator \
-    AsusClock \
+    AsusCalculator 
     GCam \
     Gboard \
     Via
