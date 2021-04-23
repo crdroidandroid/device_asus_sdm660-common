@@ -127,9 +127,6 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     android.frameworks.displayservice@1.0
 
-# Doze mode
-PRODUCT_PACKAGES += \
-    Doze
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -326,9 +323,9 @@ PRODUCT_PACKAGES += \
 # Prebuilts
 PRODUCT_PACKAGES += \
     AsusCalculator 
-    GCam \
-    Gboard \
-    Via
+#    GCam \
+    Gboard 
+#    Via
 
 # Public Libraries
 PRODUCT_COPY_FILES += \
