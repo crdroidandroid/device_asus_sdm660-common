@@ -322,10 +322,11 @@ PRODUCT_PACKAGES += \
 
 # Prebuilts
 PRODUCT_PACKAGES += \
-    AsusCalculator 
-#    GCam \
-    Gboard 
-#    Via
+    AsusCalculator \
+    Gboard
+#    Via \
+#    Gcam
+
 
 # Public Libraries
 PRODUCT_COPY_FILES += \
