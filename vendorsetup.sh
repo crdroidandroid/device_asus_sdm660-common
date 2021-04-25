@@ -1,4 +1,5 @@
 export SKIP_ABI_CHECKS=true
+export SKIP_API_CHECKS=true
 rm -rf hardware/qcom-caf/msm8998
 git clone https://github.com/LineageOS/android_hardware_qcom_display -b lineage-18.1-caf-msm8998 hardware/qcom-caf/msm8998/display
 git clone https://github.com/LineageOS/android_hardware_qcom_media -b lineage-18.1-caf-msm8998 hardware/qcom-caf/msm8998/media
@@ -15,3 +16,6 @@ git clone https://gitlab.com/ElectroPerf/vendor_addons_oneplus_apps.git -b OOS11
 
 # ZenParts
 git clone https://github.com/SonalSingh18/android_packages_apps_ZenParts.git packages/apps/ZenParts
+
+# Cache 
+export USE_CCACHE=1 && ccache -M 50G && export CONFIG_STATE_NOTIFIER=y 
