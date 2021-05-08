@@ -36,6 +36,18 @@ LOCAL_MODULE_PATH := $(TARGET_OUT)/priv-app
 LOCAL_OVERRIDES_PACKAGES := SnapdragonCamera Snap Camera2
 include $(BUILD_PREBUILT)
 
+# Google Sounds
+include $(CLEAR_VARS)
+LOCAL_MODULE := PrebuiltGoogleSounds
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := system/priv-app/PrebuiltGoogleSounds/PrebuiltGoogleSounds.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_PRODUCT_MODULE := true
+LOCAL_DEX_PREOPT := false
+include $(BUILD_PREBUILT)
+
 # Via 
 include $(CLEAR_VARS)
 LOCAL_MODULE := Via
