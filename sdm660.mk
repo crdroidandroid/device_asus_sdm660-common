@@ -25,9 +25,8 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@4.0-impl \
     android.hardware.audio@2.0-service \
     android.hardware.audio.effect@4.0-impl \
-    android.hardware.audio.effect@2.0-service \
-    android.hardware.soundtrigger@2.2-impl
-
+    android.hardware.audio.effect@2.0-service 
+    
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.bluetooth.default \
@@ -127,6 +126,9 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     android.frameworks.displayservice@1.0
 
+# Doze mode
+PRODUCT_PACKAGES += \
+    Doze
 
 # DRM
 PRODUCT_PACKAGES += \
