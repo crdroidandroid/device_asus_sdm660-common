@@ -10,9 +10,9 @@ git clone --depth=1 https://github.com/kdrag0n/proton-clang.git -b master prebui
 rm -rf packages/resources/devicesettings
 git clone https://github.com/LineageOS/android_packages_resources_devicesettings.git -b lineage-18.1 packages/resources/devicesettings
 
-# OnePlus 
-git clone https://github.com/ElectroPerf/vendor_extras.git -b 11 vendor/extras
-git clone https://gitlab.com/ElectroPerf/vendor_addons_oneplus_apps.git -b OOS11 vendor/addons/oneplus/apps
+# OP Apps & Launcher
+#git clone https://gitlab.com/ElectroPerf/vendor_addons_oneplus_apps.git -b OOS11 vendor/addons/oneplus/apps
+#git clone https://github.com/ElectroPerf/vendor_oplauncher.git -b 11 vendor/oplauncher
 
 # ZenParts
 git clone https://github.com/SonalSingh18/android_packages_apps_ZenParts.git packages/apps/ZenParts
