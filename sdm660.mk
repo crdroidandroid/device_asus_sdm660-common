@@ -326,8 +326,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Gboard \
     Gcam \
-    PrebuiltGoogleSounds 
-#    AsusCalculator \
+    PrebuiltGoogleSounds \
+    AsusCalculator 
 #    Via
 
 # Public Libraries
@@ -498,3 +498,7 @@ PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8998
 
 # ZenParts
 $(call inherit-product, packages/apps/ZenParts/zenparts.mk)
+
+# Shady Launcher
+$(call inherit-product, vendor/shadylauncher/Shady.mk)
+PRODUCT_SOONG_NAMESPACES += vendor/shadylauncher

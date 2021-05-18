@@ -16,6 +16,10 @@ git clone https://github.com/LineageOS/android_packages_resources_devicesettings
 
 # ZenParts
 git clone https://github.com/SonalSingh18/android_packages_apps_ZenParts.git packages/apps/ZenParts
+#git clone https://github.com/ElectroPerf/android_packages_apps_ZenParts packages/apps/ZenParts
 
-# Cache 
-export USE_CCACHE=1 && ccache -M 50G && export CONFIG_STATE_NOTIFIER=y 
+# Shady Launcher
+git clone https://github.com/dhimanparas20/vendor_shadylauncher.git vendor/shadylauncher
+
+# Cache
+export USE_CCACHE=1 && ccache -M 50G && export CONFIG_STATE_NOTIFIER=y
