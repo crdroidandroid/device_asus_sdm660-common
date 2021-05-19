@@ -18,6 +18,3 @@ genfscon sysfs /kernel/sound_control/speaker_gain                               
 
 # USB Fastcharge
 genfscon sysfs /kernel/fast_charge/force_fast_charge                                     u:object_r:sysfs_fcharge:s0
-
-# Smart charging
-allow init sysfs_battery_supply:file { setattr };
