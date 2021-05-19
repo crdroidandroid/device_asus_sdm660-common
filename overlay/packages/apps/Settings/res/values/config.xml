@@ -21,6 +21,9 @@
   
   <!-- For Ultra Power Saving -->
   <bool name="config_supportUltraPowerSaving">true</bool> 
+
+  <!-- Smart Charging -->
+  <bool name="config_smartChargingAvailable">true</bool>
  
   <!-- Battery Health -->
   <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full</string>
