@@ -327,11 +327,10 @@ PRODUCT_PACKAGES += \
 
 # Prebuilts
 PRODUCT_PACKAGES += \
-    Gboard \
-    Gcam \
     PrebuiltGoogleSounds \
-    AsusCalculator 
-#    Via
+    GCam \
+    Gboard \
+    AsusCalculator \
 
 # Public Libraries
 PRODUCT_COPY_FILES += \
