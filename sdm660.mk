@@ -330,7 +330,7 @@ PRODUCT_PACKAGES += \
     PrebuiltGoogleSounds \
     GCam \
     Gboard \
-    AsusCalculator \
+    AsusCalculator
 
 # Public Libraries
 PRODUCT_COPY_FILES += \
@@ -484,17 +484,12 @@ PRODUCT_SOONG_NAMESPACES += device/asus/X00TD
 PRODUCT_SOONG_NAMESPACES += device/asus/sdm660-common
 PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8998
 
-# OP Apps
-#$(call inherit-product, vendor/addons/oneplus/apps/config.mk)
-#PRODUCT_SOONG_NAMESPACES += vendor/addons/oneplus/apps
+# Dirac
+$(call inherit-product, vendor/dirac/dirac.mk)
 
-# OPLauncher
-#$(call inherit-product, vendor/oplauncher/OPLauncher.mk)
-#PRODUCT_SOONG_NAMESPACES += vendor/oplauncher
+# Shady Launcher
+#$(call inherit-product, vendor/shadylauncher/Shady.mk)
 
 # ZenParts
 $(call inherit-product, packages/apps/ZenParts/zenparts.mk)
 
-# Shady Launcher
-$(call inherit-product, vendor/shadylauncher/Shady.mk)
-PRODUCT_SOONG_NAMESPACES += vendor/shadylauncher
