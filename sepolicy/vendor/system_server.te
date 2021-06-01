@@ -9,8 +9,6 @@ allow system_server sysfs_battery_supply:file rw_file_perms;
 get_prop(system_server, vendor_persist_camera_prop)
 
 # App Lock
-allow system_server sysfs:file { read };
-allow system_server default_android_service:service_manager { add };
 allow system_server exported_camera_prop:file { read };
 allow system_server userspace_reboot_exported_prop:file { read };
 allow system_server hal_light_default:process { signal };
