@@ -325,13 +325,6 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
     vendor.qti.hardware.perf@2.0.vendor
 
-# Prebuilts
-PRODUCT_PACKAGES += \
-    PrebuiltGoogleSounds \
-    GCam \
-    Gboard \
-    AsusCalculator
-
 # Public Libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
@@ -484,11 +477,8 @@ PRODUCT_SOONG_NAMESPACES += device/asus/X00TD
 PRODUCT_SOONG_NAMESPACES += device/asus/sdm660-common
 PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8998
 
-# Dirac
-$(call inherit-product, vendor/dirac/dirac.mk)
-
-# Shady Launcher
-#$(call inherit-product, vendor/shadylauncher/Shady.mk)
+# Prebuilts
+$(call inherit-product, vendot/Prebuilts/prebuilts.mk)
 
 # ZenParts
 $(call inherit-product, packages/apps/ZenParts/zenparts.mk)

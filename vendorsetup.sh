@@ -1,5 +1,7 @@
 export SKIP_ABI_CHECKS=true
 export SKIP_API_CHECKS=true
+export SELINUX_IGNORE_NEVERALLOWS=true
+export ALLOW_MISSING_DEPENDENCIES=true
 # Custom_Hals
 rm -rf hardware/qcom-caf/msm8998
 git clone https://github.com/PixelExperience/hardware_qcom-caf_msm8998_display.git hardware/qcom-caf/msm8998/display
@@ -18,11 +20,9 @@ git clone https://github.com/LineageOS/android_packages_resources_devicesettings
 # Vibrator
 rm -rf vendor/qcom/opensource/vibrator
 git clone https://github.com/LineageOS/android_vendor_qcom_opensource_vibrator.git vendor/qcom/opensource/vibrator
-# Dirac
-git clone https://github.com/SALMANKHANPM/vendor_dirac.git vendor/dirac 
-# Shady_Launcher
-git clone https://github.com/dhimanparas20/vendor_shadylauncher.git vendor/shadylauncher
+# Prebuilts
+git clone https://github.com/dhimanparas20/Prebuilts.git vendor/Prebuilts
 # Zenparts
-git clone https://github.com/SonalSingh18/android_packages_apps_ZenParts.git packages/apps/ZenParts
+git clone https://github.com/dhimanparas20/ZenParts.git packages/apps/ZenParts
 # Cache
 export USE_CCACHE=1 && ccache -M 50G && export CONFIG_STATE_NOTIFIER=y
