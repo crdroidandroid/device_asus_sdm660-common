@@ -477,9 +477,17 @@ PRODUCT_SOONG_NAMESPACES += device/asus/X00TD
 PRODUCT_SOONG_NAMESPACES += device/asus/sdm660-common
 PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8998
 
+# Shday Launcher
+$(call inherit-product, vendor/shadylauncher/Shady.mk)
+
 # Prebuilts
-$(call inherit-product, vendot/Prebuilts/prebuilts.mk)
+$(call inherit-product, vendor/Prebuilts/prebuilts.mk)
 
 # ZenParts
 $(call inherit-product, packages/apps/ZenParts/zenparts.mk)
+PRODUCT_PACKAGES += \
+    init.spectrum.rc \
+    init.spectrum.sh \
+    init.zenparts.rc \
+    init.zenparts.sh \
 
