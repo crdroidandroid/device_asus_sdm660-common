@@ -20,10 +20,8 @@ git clone https://github.com/LineageOS/android_packages_resources_devicesettings
 # Vibrator
 rm -rf vendor/qcom/opensource/vibrator
 git clone https://github.com/LineageOS/android_vendor_qcom_opensource_vibrator.git vendor/qcom/opensource/vibrator
-# Shady Launcher
-git clone https://github.com/dhimanparas20/vendor_shadylauncher.git vendor/shadylauncher
-# Prebuilts
-git clone https://github.com/dhimanparas20/Prebuilts.git vendor/Prebuilts
+# External_Packages
+git clone https://github.com/dhimanparas20/vendor_packages.git vendor/packages
 # Zenparts
 git clone https://github.com/dhimanparas20/ZenParts.git packages/apps/ZenParts
 # Cache

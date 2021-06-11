@@ -361,10 +361,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    RemovePackages
-
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.btmac.sh \
@@ -477,11 +473,8 @@ PRODUCT_SOONG_NAMESPACES += device/asus/X00TD
 PRODUCT_SOONG_NAMESPACES += device/asus/sdm660-common
 PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8998
 
-# Shday Launcher
-$(call inherit-product, vendor/shadylauncher/Shady.mk)
-
-# Prebuilts
-$(call inherit-product, vendor/Prebuilts/prebuilts.mk)
+# External_Packages
+$(call inherit-product, vendor/packages/main.mk)
 
 # ZenParts
 $(call inherit-product, packages/apps/ZenParts/zenparts.mk)
