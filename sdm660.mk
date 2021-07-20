@@ -453,22 +453,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
-YOUR_HW_PLATFORM := msm8998
-
-# Hardware
-PRODUCT_BOARD_PLATFORM := $(YOUR_HW_PLATFORM) 
-PRODUCT_USES_QCOM_HARDWARE := true
-
-# HALS
-SRC_AUDIO_HAL_DIR := hardware/qcom-caf/$(YOUR_HW_PLATFORM)/audio 
-SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/$(YOUR_HW_PLATFORM)/display 
-SRC_MEDIA_HAL_DIR := hardware/qcom-caf/$(YOUR_HW_PLATFORM)/media
-
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += device/asus/X00TD
-PRODUCT_SOONG_NAMESPACES += device/asus/sdm660-common
-PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8998
-
 # External_Packages
 $(call inherit-product, vendor/packages/main.mk)
 
