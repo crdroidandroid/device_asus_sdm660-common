@@ -1,5 +1,4 @@
-allow zygote vendor_file:dir { read };
 allow zygote zygote:capability { kill };
-allow zygote exported_camera_prop:file { read };
+get_prop(zygote, exported_camera_prop);
 allow zygote exported_camera_prop:file { open };
 allow zygote exported_camera_prop:file { getattr };
