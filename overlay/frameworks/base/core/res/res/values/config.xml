@@ -309,4 +309,7 @@
     <!-- Default value for led color when battery is fully charged -->
     <integer name="config_notificationsBatteryFullARGB">0xFF00FF00</integer>
 
+    <!-- Set the default dialer package name. -->
+    <string name="config_defaultDialer" translatable="false">com.android.dialer</string>
+
 </resources>
