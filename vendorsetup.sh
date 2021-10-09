@@ -1,3 +1,4 @@
+
 export SKIP_ABI_CHECKS=true
 export SKIP_API_CHECKS=true
 #export SELINUX_IGNORE_NEVERALLOWS=true
@@ -7,7 +8,9 @@ rm -rf hardware/qcom-caf/msm8998
 git clone https://github.com/PixelExperience/hardware_qcom-caf_msm8998_display.git hardware/qcom-caf/msm8998/display
 git clone https://github.com/PixelExperience/hardware_qcom-caf_msm8998_media.git hardware/qcom-caf/msm8998/media
 git clone https://github.com/LineageOS/android_hardware_qcom_audio -b lineage-18.1-caf-msm8998 hardware/qcom-caf/msm8998/audio
-# Kernel_Compiler
+# Clang
+git clone https://gitlab.com/ElectroPerf/atom-x-clang.git --depth=1 prebuilts/clang/host/linux-x86/clang-atom
+# GCC
 git clone --depth=1 https://github.com/mvaisakh/gcc-arm64.git prebuilts/gcc/linux-x86/aarch64/aarch64-elf
 git clone --depth=1 https://github.com/mvaisakh/gcc-arm.git prebuilts/gcc/linux-x86/arm/arm-eabi
 # data-ipa-cfg-mgr
