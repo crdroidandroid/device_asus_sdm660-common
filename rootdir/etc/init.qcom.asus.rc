@@ -37,6 +37,15 @@ on boot
     chown system system /sys/class/power_supply/battery/device/smartchg_stop_charging
     chmod 0660 /sys/class/power_supply/battery/device/smartchg_stop_charging
 
+on boot
+    # Tap to wake node
+    chown system system /proc/tpd_gesture
+    chmod 0660 /proc/tpd_gesture
+
+# Start Double Tap To Wake Gesture Node
+on property:sys.boot_completed=1
+    write /proc/tpd_gesture 1
+
 service nvram_btwifi /system/bin/nvram_btwifi
     user root
     group system oem_2901
@@ -68,3 +77,4 @@ service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
 
 on property:ro.hq.support.nfc=1
     enable vendor.nfc_hal_service
+
