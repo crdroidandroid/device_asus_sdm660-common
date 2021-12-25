@@ -1,13 +1,11 @@
-
 export SKIP_ABI_CHECKS=true
 export SKIP_API_CHECKS=true
 #export SELINUX_IGNORE_NEVERALLOWS=true
 #export ALLOW_MISSING_DEPENDENCIES=true
 # Custom_Hals
-rm -rf hardware/qcom-caf/msm8998
-git clone https://github.com/PixelExperience/hardware_qcom-caf_msm8998_display.git hardware/qcom-caf/msm8998/display
-git clone https://github.com/PixelExperience/hardware_qcom-caf_msm8998_media.git hardware/qcom-caf/msm8998/media
-git clone https://github.com/LineageOS/android_hardware_qcom_audio -b lineage-18.1-caf-msm8998 hardware/qcom-caf/msm8998/audio
+rm -rf hardware/qcom-caf/msm8998/display && rm -rf hardware/qcom-caf/msm8998/audio
+git clone https://github.com/Navin136/android_hardware_qcom-caf_display_msm8998.git hardware/qcom-caf/msm8998/display
+git clone https://github.com/AOSP-11/hardware_qcom-caf_audio_msm8998.git hardware/qcom-caf/msm8998/audio
 # Clang
 git clone https://gitlab.com/ElectroPerf/atom-x-clang.git --depth=1 prebuilts/clang/host/linux-x86/clang-atom
 # GCC
