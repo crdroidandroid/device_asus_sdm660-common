@@ -2,3 +2,4 @@ allow zygote zygote:capability { kill };
 get_prop(zygote, exported_camera_prop);
 allow zygote exported_camera_prop:file { open };
 allow zygote exported_camera_prop:file { getattr };
+allow zygote unlabeled:file { write };
