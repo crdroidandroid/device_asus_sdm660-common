@@ -49,6 +49,8 @@ debug.stagefright.omx_default_rank.sw-audio=1
 debug.stagefright.omx_default_rank=0
 
 # Display
+persist.sys.sf.color_mode=9
+persist.sys.sf.native_mode=2
 debug.sf.enable_hwc_vds=1
 debug.sf.hw=1
 persist.hwc.mdpcomp.enable=true
@@ -116,6 +118,10 @@ ro.vendor.sensors.facing=false
 
 # Shutdown time
 sys.vendor.shutdown.waittime=500
+
+# Surfaceflinger
+vendor.display.qdcm.disable_factory_mode=1
+vendor.display.qdcm.mode_combine=1
 
 # UBWC
 vendor.video.disable.ubwc=1
