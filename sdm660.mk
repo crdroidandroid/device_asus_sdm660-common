@@ -455,7 +455,7 @@ PRODUCT_BOOT_JARS += \
     WfdCommon
 
 # External_Packages
-$(call inherit-product, vendor/packages/main.mk)
+#$(call inherit-product, vendor/packages/main.mk)
 
 # ZenParts
 $(call inherit-product, packages/apps/ZenParts/zenparts.mk)
