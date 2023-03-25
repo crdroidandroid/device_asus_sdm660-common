@@ -20,4 +20,3 @@ allow init platform_app:binder { call };
 
 allow init vendor_file:file { execute };
 allow init su:process { transition };
-allow init vendor_file:file { execute_no_trans };

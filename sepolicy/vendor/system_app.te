@@ -74,7 +74,6 @@ allow system_app sysfs_vibrator:dir search;
 # FPS Info Overlay
 allow system_app sysfs_fps:file { open read getattr write };
 
-allow priv_app theme_prop:file w_file_perms;
 
 # Flipendo
 allow platform_app hal_power_service:service_manager { find };

@@ -1,7 +1,7 @@
 # untrusted_app
 allow untrusted_app virtual_ab_prop:file { read };
 allow untrusted_app virtual_ab_prop:file { open };
-allow untrusted_app theme_prop:file { getattr };allow untrusted_app mnt_vendor_file:lnk_file { getattr };
+allow untrusted_app mnt_vendor_file:lnk_file { getattr };
 allow untrusted_app theme_prop:file { read };
 allow untrusted_app theme_prop:file { open };
 allow untrusted_app theme_prop:file { getattr };
